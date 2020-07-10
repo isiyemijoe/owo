@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "678394862370",
+    "firebase_url": "https://owo-star.firebaseio.com",
+    "project_id": "owo-star",
+    "storage_bucket": "owo-star.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678394862370:android:4722f3450360df4da5637b",
+        "android_client_info": {
+          "package_name": "com.joe.owo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678394862370-uu9tqa3bkvrhoql30pkln2ckvcmikc48.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8aEf29vgivRcqo3Urmqdl-zed_rbMtfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678394862370-uu9tqa3bkvrhoql30pkln2ckvcmikc48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Signin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/ic_logintop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Hello There \n Welcome Back"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signin_email_tv"
+        android:layout_width="0dp"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:boxBackgroundColor="@color/colorAccent"
+        android:layout_marginEnd="20dp"
+        app:hintTextColor="@color/white"
+        android:hint="Username/Email"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/siginin_password_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        app:passwordToggleEnabled="true"
+app:boxStrokeErrorColor="@color/white"
+      android:textColorHint="@color/white"
+        app:passwordToggleTint="@color/white"
+        android:elevation="8dp"
+        app:boxBackgroundColor="@color/colorAccent"
+        app:hintTextColor="@color/white"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/signin_email_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_email_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_login_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/raleway_semibold"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        app:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/siginin_password_tv"
+        app:layout_constraintStart_toStartOf="@+id/siginin_password_tv"
+        app:layout_constraintTop_toBottomOf="@+id/siginin_password_tv" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/signin_signup"
+        android:text="No Account yet? Sign Up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_login_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

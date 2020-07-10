@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Signup">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_signup_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/raleway_semibold"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        app:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_password_tv"
+        app:layout_constraintStart_toStartOf="@+id/signup_password_tv"
+        app:layout_constraintTop_toBottomOf="@+id/signup_password_tv" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/ic_logintop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Get on Board"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_email_tv"
+        android:layout_width="0dp"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        app:boxBackgroundColor="@color/colorAccent"
+        android:layout_marginEnd="20dp"
+        app:hintTextColor="@color/white"
+        android:hint="Email"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signupusername_email_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Full Name"
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@color/colorAccent"
+        app:hintTextColor="@color/white"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_email_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:inputType="textPersonName"
+            android:textColor="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_password_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:elevation="8dp"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@color/colorAccent"
+        app:boxStrokeErrorColor="@color/white"
+        app:hintTextColor="@color/white"
+        app:layout_constraintCircleRadius="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/signupusername_email_tv"
+        app:layout_constraintStart_toStartOf="@+id/signupusername_email_tv"
+        app:layout_constraintTop_toBottomOf="@+id/signupusername_email_tv"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_signin"
+        android:layout_marginTop="8dp"
+        android:text="No Account yet? Sign Up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/signup_signup_btn2"
+        app:layout_constraintStart_toStartOf="@+id/signup_signup_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/signup_signup_btn2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
